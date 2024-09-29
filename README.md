@@ -1,6 +1,9 @@
 # siprabu-frontend
 
-This template should help get you started developing with Vue 3 in Vite.
+Perangkat lunak yang dikembangkan bernama SIPRABU. Merupakan perangkat lunak berbasis web. Memiliki dua tipe pengguna, yaitu user dan admin. Admin bertugas untuk mengelola data user dan data hasil prediksi padi. User bertugas untuk memberikan informasi terkait luas lahan pertanian yang dimiliki dan nantinya akan di proses menggunakan model machine learning sehingga menghasilkan nilai prediksi panen bawang.
+
+- Url web : https://main--golden-buttercream-5166ac.netlify.app/berita
+
 
 ## Recommended IDE Setup
 
