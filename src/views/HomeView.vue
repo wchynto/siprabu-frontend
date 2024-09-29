@@ -5,37 +5,39 @@ import Card from '@/components/Card.vue';
 import Button from '@/components/PrimaryButton.vue';
 import { ref } from 'vue';
 
+import sawahBawangImage from '@/assets/images/sawah-bawang.jpeg';
+
 // Mock data for news articles
 const newsArticles = ref([
   {
     title: 'Prediksi Harga Bawang Bulan Ini',
     description: 'Dapatkan informasi terbaru tentang prediksi harga bawang di berbagai wilayah Indonesia.',
-    img: '/src/assets/images/sawah-bawang.jpeg',
+    img: sawahBawangImage,
   },
   {
     title: 'Strategi Pemasaran untuk Petani Bawang',
     description: 'Pelajari bagaimana petani bisa meningkatkan pemasaran dengan teknologi terbaru.',
-    img: '/src/assets/images/sawah-bawang.jpeg',
+    img: sawahBawangImage,
   },
   {
     title: 'Tren Cuaca dan Pengaruhnya terhadap Harga Bawang',
     description: 'Analisis cuaca terbaru dan dampaknya pada produksi bawang di Indonesia.',
-    img: '/src/assets/images/sawah-bawang.jpeg',
+    img: sawahBawangImage,
   },
   {
     title: 'Inovasi Pertanian Digital',
     description: 'Teknologi digital mempengaruhi berbagai aspek pertanian, termasuk prediksi harga.',
-    img: '/src/assets/images/sawah-bawang.jpeg',
+    img: sawahBawangImage,
   },
   {
     title: 'Cara Optimalisasi Produksi dengan Prediksi Harga',
     description: 'Dengan prediksi harga yang lebih presisi, petani dapat memaksimalkan hasil panen.',
-    img: '/src/assets/images/sawah-bawang.jpeg',
+    img: sawahBawangImage,
   },
   {
     title: 'Kebijakan Pemerintah Terkait Harga Pangan',
     description: 'Informasi terbaru tentang kebijakan pemerintah yang berdampak pada harga bawang.',
-    img: '/src/assets/images/sawah-bawang.jpeg',
+    img: sawahBawangImage,
   },
 ]);
 </script>
@@ -44,7 +46,7 @@ const newsArticles = ref([
   <UserLayout>
     <main class="mb-12">
       <!-- Jumbotron Section -->
-      <Jumbotron bg-url="/src/assets/images/sawah-bawang.jpeg" class="relative">
+      <Jumbotron :bg-url="sawahBawangImage" class="relative">
         <div class="absolute inset-0 bg-gray-900 opacity-50"></div>
         <div class="relative z-10 text-center">
           <h1

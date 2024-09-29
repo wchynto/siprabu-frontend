@@ -7,6 +7,12 @@ import Button from '@/components/PrimaryButton.vue';
 import ButtonOutline from '@/components/PrimaryButtonOutline.vue';
 import { computed, ref } from 'vue';
 
+import newsImage1 from '@/assets/images/news/news-1.jpg';
+import newsImage2 from '@/assets/images/news/news-2.jpg';
+import newsImage3 from '@/assets/images/news/news-3.jpg';
+import newsImage4 from '@/assets/images/news/news-4.jpg';
+import newsImage5 from '@/assets/images/news/news-5.jpg';
+
 // Data Setup
 const itemsPerPage = 9;
 const currentPage = ref(1);
@@ -17,7 +23,8 @@ const items = ref(Array.from({ length: 100 }, (v, i) => ({
   id: i + 1,
   name: 'Lorem Ipsum Dolor Sit Amet',
   category: categories[Math.floor(Math.random() * categories.length)],
-  image: `/src/assets/images/news/news-${Math.floor(Math.random() * 5) + 1}.jpg`,
+  image:
+    [Math.random() * 5 | 0].map(i => [newsImage1, newsImage2, newsImage3, newsImage4, newsImage5][i])
 })));
 
 const filteredItems = computed(() =>
