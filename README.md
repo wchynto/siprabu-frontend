@@ -2,7 +2,7 @@
 
 Perangkat lunak yang dikembangkan bernama SIPRABU. Merupakan perangkat lunak berbasis web. Memiliki dua tipe pengguna, yaitu user dan admin. Admin bertugas untuk mengelola data user dan data hasil prediksi padi. User bertugas untuk memberikan informasi terkait luas lahan pertanian yang dimiliki dan nantinya akan di proses menggunakan model machine learning sehingga menghasilkan nilai prediksi panen bawang.
 
-- Url web : [https://main--golden-buttercream-5166ac.netlify.app/berita](https://main--golden-buttercream-5166ac.netlify.app/)
+- Url web : https://main--golden-buttercream-5166ac.netlify.app/
 
 
 ## Recommended IDE Setup
