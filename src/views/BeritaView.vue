@@ -7,6 +7,8 @@ import Button from '@/components/PrimaryButton.vue';
 import ButtonOutline from '@/components/PrimaryButtonOutline.vue';
 import { computed, ref } from 'vue';
 
+import jumbotronImage from '@/assets/images/news-1.jpg';
+
 import newsImage1 from '@/assets/images/news/news-1.jpg';
 import newsImage2 from '@/assets/images/news/news-2.jpg';
 import newsImage3 from '@/assets/images/news/news-3.jpg';
@@ -48,7 +50,7 @@ function filterByCategory(category) {
   <UserLayout>
     <main class="pb-16 bg-gray-50">
       <!-- Jumbotron Section -->
-      <Jumbotron bg-url="/src/assets/images/news-1.jpg">
+      <Jumbotron :bg-url="jumbotronImage">
         <h1 class="mb-4 text-5xl font-extrabold leading-none tracking-tight text-white md:text-6xl lg:text-7xl">
           Jelajahi Dunia Pertanian
         </h1>
@@ -56,9 +58,6 @@ function filterByCategory(category) {
           Temukan berbagai topik menarik yang meliputi teknologi, bisnis, penelitian, dan kesehatan di dunia pertanian.
         </p>
         <form class="max-w-lg mx-auto">
-
-          ￼
-          ￼
           <div class="relative">
             <input type="search" id="search" placeholder="Cari berita atau topik..."
               class="w-full p-3 pl-4 pr-12 text-sm text-gray-900 bg-white border border-pink-300 rounded-lg focus:outline-none focus:border-pink-500 focus:ring-2 focus:ring-pink-300" />
